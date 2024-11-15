@@ -63,8 +63,8 @@ const { PageNotFoundException } = require("./helper/ExceptionHelper");
     app.use(methodOverride("X-HTTP-Method-Override"));
     app.use(methodOverride("X-Method-Override"));
 
-    app.use("/", serveStatic(process.env.STATIC_PATH));
-    app.use(serveFavicon(process.env.FAVICON_PATH));
+    app.use("/", serveStatic(join(__dirname, process.env.STATIC_PATH)));
+    app.use(serveFavicon(join(__dirname, process.env.FAVICON_PATH)));
 
     app.use(
         expressWinston.logger({
@@ -102,12 +102,13 @@ const { PageNotFoundException } = require("./helper/ExceptionHelper");
     });
 
     /*----------------------------------------------------------
-    * 7) 테스트용 DB파일 연결
-    *----------------------------------------------------------*/
-    const jsonServerRouter = getJsonServerRouter(process.env.DB_FILE_PATH);
+     * 7) 테스트용 DB파일 연결
+     *----------------------------------------------------------*/
+    const dbFilePath = join(__dirname, process.env.DB_FILE_PATH);
+    const jsonServerRouter = getJsonServerRouter(dbFilePath);
 
     if (jsonServerRouter !== null) {
-        console.log("Json Server is mounted >>> " + process.env.DB_FILE_PATH);
+        console.log("Json Server is mounted >>> " + dbFilePath);
         app.use(process.env.BACKEND_PATH, jsonServerRouter);
     }
 
