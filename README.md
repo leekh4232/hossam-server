@@ -20,48 +20,35 @@ JSON-Server의 응답 결과를 SpringBoot RestAPI 형식으로 맞춰주는 Rou
 
 ## 설치 방법
 
-터미널을 소스파일이 있는 폴더로 이동하고 아래 명령으로 의존성 패키지를 설치합니다.
+아래 명령어를 통해 설치를 수행합니다.
 
 ```shell
-$ yarn install
-```
-
-혹은
-
-```shell
-$ npm install
+$ npm install -g git@github.com:leekh4232/mega-server-js.git
 ```
 
 ## 실행 방법
 
-터미널을 소스파일이 있는 폴더로 이동하고 아래 명령어를 실행합니다.
+터미널을 열고 다음의 명령을 수행합니다.
 
 ```shell
-$ yarn start
+$ mega-server
 ```
 
-혹은
+## 삭제 방법
 
 ```shell
-$ node app.js
+$ npm uninstall -g mega-server
 ```
 
-## 운영 방법
+## 제공되는 예제
 
-### 데이터 관리
-
-프로그램 폴더의 `data.json` 파일이 DB로 사용됩니다.
-
-CRUD 요청에 따라 실제 데이터 파일이 수정됩니다.
-
-맨 처음 상태로 되돌리고자 할 경우 `data.json` 파일을 삭제하고 `data(원본).json` 파일을 `data.json` 이름으로 복사합니다.
-
-### API외의 URL 접근
-
-`static` 폴더의 파일을 URL로 접근 가능합니다.
-
-백엔드 시스템의 URL은 `.env`파일에 설정된 `NODE_ENV`값을 기준으로 합니다.
-
-### Frontend CORS 설정
-
-`.env` 파일에 설정된 `REACT_FRONTEND_URL`로 부터의 요청은 CORS를 허가합니다.
+- http://localhost:8080/hello
+- http://localhost:8080/department-item
+- http://localhost:8080/department
+- http://localhost:8080/professor
+- http://localhost:8080/student
+- http://localhost:8080/news
+- http://localhost:8080/titanic
+- http://localhost:8080/grade
+- http://localhost:8080/traffic_acc
+- http://localhost:8080/covid19
