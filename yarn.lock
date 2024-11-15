@@ -971,6 +971,11 @@ eslint-visitor-keys@^3.4.1, eslint-visitor-keys@^3.4.3:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
+esm@^3.2.25:
+  version "3.2.25"
+  resolved "https://registry.npmjs.org/esm/-/esm-3.2.25.tgz"
+  integrity sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==
+
 espree@^9.6.0, espree@^9.6.1:
   version "9.6.1"
   resolved "https://registry.npmjs.org/espree/-/espree-9.6.1.tgz"
@@ -1808,6 +1813,7 @@ media-typer@0.3.0:
     body-parser "^1.20.3"
     cors "^2.8.5"
     dotenv "^16.4.5"
+    esm "^3.2.25"
     express "^4.21.1"
     express-useragent "^1.0.15"
     express-winston "^4.2.0"
@@ -2482,10 +2488,12 @@ side-channel@^1.0.4, side-channel@^1.0.6:
     body-parser "^1.20.3"
     cors "^2.8.5"
     dotenv "^16.4.5"
+    esm "^3.2.25"
     express "^4.21.1"
     express-useragent "^1.0.15"
     express-winston "^4.2.0"
     json-server "0.17.2"
+    mega-server "file:"
     method-override "^3.0.0"
     nodemailer "^6.9.16"
     serve-favicon "^2.5.0"
