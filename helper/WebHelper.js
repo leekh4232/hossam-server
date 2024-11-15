@@ -86,7 +86,7 @@ const WebHelper = () => {
                     message: error.message,
                     url: `[${req.method}] ${decodeURIComponent(current_url)}`,
                     client: `${(req.headers['x-forwarded-for'] || req.connection.remoteAddress || '').split(',')[0].trim()} / ${req.useragent.os} / ${req.useragent.browser}-${req.useragent.version}`,
-                    trace: error.stack,
+                    //trace: error.stack,
                 };
 
                 //logger.errorTable();
