@@ -1,10 +1,10 @@
 {
-  "name": "mega-server",
+  "name": "hossam-server",
   "version": "1.0.0",
   "description": "메가스터디IT아카데미 - 프론트엔드 수업용 백엔드 서버",
   "main": "app.js",
   "bin": {
-    "mega-server": "./app.js"
+    "hossam-server": "./app.js"
   },
   "scripts": {
     "start": "node app.js",

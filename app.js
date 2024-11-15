@@ -136,7 +136,7 @@ const { PageNotFoundException } = require("./helper/ExceptionHelper");
     *----------------------------------------------------------*/
     app.listen(process.env.HTTP_PORT, function () {
         console.log("+----------------------------------------------+");
-        console.log("|            Express Backend Server            |");
+        console.log("|             Hossam Backend Server            |");
         console.log("|             메가스터디 IT 아카데미           |");
         console.log("|       이광호 강사 (leekh4232@gmail.com)      |");
         console.log("+----------------------------------------------+");

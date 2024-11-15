@@ -1,4 +1,4 @@
-# mega-server-js
+# hossam-server
 
 ![Badge](https://img.shields.io/badge/Author-Lee%20KwangHo-blue.svg?style=flat-square&logo=appveyor) &nbsp;
 ![Generic badge](https://img.shields.io/badge/version-1.0.0-critical.svg?style=flat-square&logo=appveyor) &nbsp;
@@ -23,7 +23,7 @@ JSON-Server의 응답 결과를 SpringBoot RestAPI 형식으로 맞춰주는 Rou
 아래 명령어를 통해 설치를 수행합니다.
 
 ```shell
-$ npm install -g git@github.com:leekh4232/mega-server-js.git
+$ npm install -g git@github.com:leekh4232/hossam-server.git
 ```
 
 ## 실행 방법
@@ -31,14 +31,16 @@ $ npm install -g git@github.com:leekh4232/mega-server-js.git
 터미널을 열고 다음의 명령을 수행합니다.
 
 ```shell
-$ mega-server
+$ hossam-server
 ```
 
 ## 삭제 방법
 
 ```shell
-$ npm uninstall -g mega-server
+$ npm uninstall -g hossam-server
 ```
+
+> 데이터를 초기화 해야 할 경우 삭제후 재설치 하시면 됩니다.
 
 ## 제공되는 예제
 
