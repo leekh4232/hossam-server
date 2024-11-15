@@ -95,7 +95,7 @@ const WebHelper = () => {
                 for (const item in errorInfo) {
                     logger.error(`${item} : ${errorInfo[item]}`);
                 }
-                logger.error("--------------------------------------------------\n\n");
+                logger.error("--------------------------------------------------");
             }
 
             res._sendResult(null, error);
