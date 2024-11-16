@@ -23,7 +23,7 @@ MIT 라이센스를 따릅니다.
 아래 명령어를 통해 설치를 수행합니다.
 
 ```shell
-$ npm install -g git@github.com:leekh4232/hossam-server.git
+$ npm install -g https://github.com/leekh4232/hossam-server.git
 ```
 
 ## 실행 방법
