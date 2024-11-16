@@ -140,7 +140,7 @@ const { PageNotFoundException } = require("./helper/ExceptionHelper");
         console.log("|             메가스터디 IT 아카데미           |");
         console.log("|       이광호 강사 (leekh4232@gmail.com)      |");
         console.log("+----------------------------------------------+");
-        console.log("본 프로그램은 메가스터디IT아카데미 프론트엔드 수업에서의 활용을 목적으로 개발되었습니다.\n수업 외 사용 및 무단 배포를 금합니다.");
+        console.log("본 프로그램은 메가스터디IT아카데미 프론트엔드 수업에서의 활용을 목적으로 개발되었습니다.\nMIT 라이센스를 따릅니다.\n");
         logger.info(`Server Home: ${__dirname}`);
         logger.info(`Env File Path: ${env_path}`);
         logger.info(`Data File Path: ${join(__dirname, process.env.DB_FILE_PATH)}`);

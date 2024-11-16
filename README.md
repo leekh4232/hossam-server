@@ -16,7 +16,7 @@
 
 JSON-Server의 응답 결과를 SpringBoot RestAPI 형식으로 맞춰주는 Route 기능을 수행합니다.
 
-수업 외 사용 및 무단 배포를 금합니다.
+MIT 라이센스를 따릅니다.
 
 ## 설치 방법
 
