@@ -65,9 +65,6 @@ const { PageNotFoundException } = require("./helper/ExceptionHelper");
     app.use(methodOverride("X-HTTP-Method-Override"));
     app.use(methodOverride("X-Method-Override"));
 
-    app.use("/", serveStatic(join(__dirname, process.env.STATIC_PATH)));
-    app.use(serveFavicon(join(__dirname, process.env.FAVICON_PATH)));
-
     app.use(
         expressWinston.logger({
             winstonInstance: logger,
@@ -78,6 +75,9 @@ const { PageNotFoundException } = require("./helper/ExceptionHelper");
             }
         })
     );
+
+    app.use(serveFavicon(join(__dirname, process.env.FAVICON_PATH)));
+    app.use("/", serveStatic(join(__dirname, process.env.STATIC_PATH)));
 
     app.enable("trust proxy");
     app.set("trust proxy", function () {
