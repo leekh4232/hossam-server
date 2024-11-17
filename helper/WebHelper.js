@@ -31,13 +31,15 @@ const WebHelper = () => {
             };
 
             if (error) {
-                json.name = error.name || "Server Error";
+                json.error = error.name || "Server Error";
                 json.status = error.code || 500;
                 json.message = error.message || "요청을 처리하는데 실패했습니다.";
 
                 if (isNaN(json.status)) {
                     json.status = 500;
                 }
+
+                json.trace = error.stack;
             }
 
             if (data) {
