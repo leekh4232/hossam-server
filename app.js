@@ -59,6 +59,8 @@ const { PageNotFoundException } = require("./helper/ExceptionHelper");
     app.use(bodyParser.text());
     app.use(bodyParser.json());
 
+    app.use(cors());
+
     app.use(methodOverride("X-HTTP-Method"));
     app.use(methodOverride("X-HTTP-Method-Override"));
     app.use(methodOverride("X-Method-Override"));
@@ -81,8 +83,6 @@ const { PageNotFoundException } = require("./helper/ExceptionHelper");
     app.set("trust proxy", function () {
         return true;
     });
-
-    app.use(cors());
 
     const router = express.Router();
     app.use(router);
