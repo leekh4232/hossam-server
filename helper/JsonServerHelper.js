@@ -10,7 +10,7 @@ const getJsonServerRouter = (dbFilePath) => {
 
     const jsonServerRouter = jsonServer.router(dbFilePath);
 
-    jsonServerRouter.render = (req, res) => {
+    jsonServerRouter.render = (req, res, next) => {
         if (Object.keys(res.locals.data).length === 0) {
             const current_url = urlFormat({
                 protocol: req.protocol,
@@ -30,6 +30,7 @@ const getJsonServerRouter = (dbFilePath) => {
         };
 
         res.jsonp(json);
+        next();
     };
 
     return jsonServerRouter;
