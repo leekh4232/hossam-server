@@ -29,7 +29,7 @@ const logger = winston.createLogger({
     // 일반 로그 규칙 정의
     transports: [
         // 하루에 하나씩 파일 형태로 기록하기 위한 설정
-        new winstonDaily({
+        /*new winstonDaily({
             name: "log",
             level: process.env.LOG_LEVEL, // 출력할 로그의 수준.
             datePattern: "YYMMDD", // 파일 이름에 표시될 날짜형식
@@ -38,9 +38,9 @@ const logger = winston.createLogger({
             maxsize: 50000000,
             maxFiles: 50,
             zippedArchive: true,
-        }),
+        }),*/
         // 하루에 하나씩 파일 형태로 기록하기 위한 설정
-        new winstonDaily({
+        /*new winstonDaily({
             name: "error",
             level: "error", // 출력할 로그의 수준.
             datePattern: "YYMMDD", // 파일 이름에 표시될 날짜형식
@@ -49,7 +49,7 @@ const logger = winston.createLogger({
             maxsize: 50000000,
             maxFiles: 50,
             zippedArchive: true,
-        }),
+        }),*/
     ],
 });
 
@@ -115,7 +115,7 @@ __getLogFrame = (items, title = null) => {
 
     items.forEach((v, i) => {
         const item = [];
-        
+
         for (const attr in v) {
             item.push(v[attr]);
         }
