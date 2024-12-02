@@ -78,6 +78,7 @@ const { PageNotFoundException } = require("./helper/ExceptionHelper");
 
     app.use(serveFavicon(join(__dirname, process.env.FAVICON_PATH)));
     app.use("/", serveStatic(join(__dirname, process.env.STATIC_PATH)));
+    app.use("/files", serveStatic(join(__dirname, process.env.UPLOAD_PATH)));
 
     app.enable("trust proxy");
     app.set("trust proxy", function () {
