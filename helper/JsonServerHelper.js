@@ -36,4 +36,6 @@ const getJsonServerRouter = (dbFilePath) => {
     return jsonServerRouter;
 };
 
-module.exports = getJsonServerRouter;
+const getJsonServerBodyParser = () => jsonServer.bodyParser;
+
+module.exports = { getJsonServerRouter, getJsonServerBodyParser };

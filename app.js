@@ -34,7 +34,7 @@ const bodyParser = require("body-parser");
 const methodOverride = require("method-override");
 const cors = require("cors");
 const expressWinston = require("express-winston");
-const getJsonServerRouter = require("./helper/JsonServerHelper");
+const jsonServer = require("./helper/JsonServerHelper");
 
 /*-----------------------------------------------------------
  * 3) Express 객체 생성 및 Helper 로드
@@ -106,11 +106,18 @@ const { PageNotFoundException } = require("./helper/ExceptionHelper");
      * 7) 테스트용 DB파일 연결
      *----------------------------------------------------------*/
     const dbFilePath = join(__dirname, process.env.DB_FILE_PATH);
-    const jsonServerRouter = getJsonServerRouter(dbFilePath);
+    const jsonServerRouter = jsonServer.getJsonServerRouter(dbFilePath);
 
     if (jsonServerRouter !== null) {
         console.log("Json Server is mounted >>> " + dbFilePath);
         app.use(process.env.BACKEND_PATH, jsonServerRouter);
+    }
+
+    const jsonServerBodyParser = jsonServer.getJsonServerBodyParser();
+
+    if (jsonServerBodyParser !== null) {
+        console.log("Json Server body parser is mounted");
+        app.use(jsonServerBodyParser);
     }
 
     /*----------------------------------------------------------
