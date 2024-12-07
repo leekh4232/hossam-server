@@ -53,4 +53,6 @@ $ npm uninstall -g hossam-server
 - http://localhost:8080/titanic
 - http://localhost:8080/grade
 - http://localhost:8080/traffic_acc
-- http://localhost:8080/covid19
+
+
+
