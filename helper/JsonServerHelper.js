@@ -11,8 +11,8 @@ const getJsonServerRouter = (dbFilePath) => {
     const jsonServerRouter = jsonServer.router(dbFilePath);
 
     jsonServerRouter.render = (req, res) => {
-        //if (req.method.toUpperCase() !== 'DELETE' && Object.keys(res.locals.data).length === 0) {
-            if (req.method.toUpperCase() !== 'DELETE' && req.method.toUpperCase() !== 'GET' && Object.keys(res.locals.data).length === 0) {
+        if (req.method.toUpperCase() !== 'DELETE' && Object.keys(res.locals.data).length === 0) {
+        //if (req.method.toUpperCase() !== 'DELETE' && req.method.toUpperCase() !== 'GET' && Object.keys(res.locals.data).length === 0) {
             const current_url = urlFormat({
                 protocol: req.protocol,
                 host: req.get("host"),
