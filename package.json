@@ -23,6 +23,7 @@
     "json-server": "0.17.2",
     "mega-server": "file:",
     "method-override": "^3.0.0",
+    "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.16",
     "serve-favicon": "^2.5.0",
     "serve-static": "^1.16.2",

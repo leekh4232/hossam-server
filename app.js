@@ -31,6 +31,7 @@ const useragent = require("express-useragent");
 const serveStatic = require("serve-static");
 const serveFavicon = require("serve-favicon");
 const bodyParser = require("body-parser");
+const multer = require('multer');
 const methodOverride = require("method-override");
 const cors = require("cors");
 const expressWinston = require("express-winston");
@@ -58,6 +59,9 @@ const { PageNotFoundException } = require("./helper/ExceptionHelper");
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(bodyParser.text());
     app.use(bodyParser.json());
+
+    const form_data = multer();
+    app.use(form_data.array());
 
     app.use(cors());
 
