@@ -1,12 +1,14 @@
 const fs = require("fs");
 const jsonServer = require("json-server");
 const { PageNotFoundException } = require("./ExceptionHelper");
-const { urlFormat } = require("./UtilHelper")
+const { myip, urlFormat } = require("./UtilHelper");
 
 const getJsonServerRouter = (dbFilePath) => {
     if (!fs.existsSync(dbFilePath)) {
         return null;
     }
+
+    const appUrl = `http://${myip()[0]}:${process.env.HTTP_PORT}${process.env.BACKEND_PATH}`
 
     const jsonServerRouter = jsonServer.router(dbFilePath);
 
@@ -23,10 +25,22 @@ const getJsonServerRouter = (dbFilePath) => {
             return res.sendError(new PageNotFoundException(`${current_url} not found`));
         }
 
+        let data = structuredClone(res.locals.data);
+
+        if (Array.isArray(data)) {
+            data = data.map((v, i) => {
+                if (v.photo_url) {
+                    v.photo_url = appUrl + v.photo_url;
+                }
+
+                return v;
+            })
+        }
+
         const json = {
             status: 200,
             message: "OK",
-            item: res.locals.data,
+            item: data,
             timestamp: new Date().toISOString(),
         };
 
