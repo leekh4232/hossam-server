@@ -44,15 +44,14 @@ $ npm uninstall -g hossam-server
 
 ## 제공되는 예제
 
-- http://localhost:8080/hello
-- http://localhost:8080/department-item
-- http://localhost:8080/department
-- http://localhost:8080/professor
-- http://localhost:8080/student
-- http://localhost:8080/news
-- http://localhost:8080/titanic
-- http://localhost:8080/grade
-- http://localhost:8080/traffic_acc
+- http://localhost:8080/hello.html
+- http://localhost:8080/world.html
+- http://localhost:8080/simple
+- http://localhost:8080/departments
+- http://localhost:8080/professors
+- http://localhost:8080/students
+- http://localhost:8080/subjects
+- http://localhost:8080/enrollments
 
 
 
