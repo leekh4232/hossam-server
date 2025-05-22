@@ -1856,6 +1856,7 @@ media-typer@0.3.0:
     serve-static "^1.16.2"
     simple-backend "file:"
     table "^6.8.2"
+    url-join "^5.0.0"
     winston "^3.17.0"
     winston-daily-rotate-file "^5.0.0"
 
@@ -2575,6 +2576,7 @@ side-channel@^1.0.4, side-channel@^1.0.6:
     serve-static "^1.16.2"
     simple-backend "file:"
     table "^6.8.2"
+    url-join "^5.0.0"
     winston "^3.17.0"
     winston-daily-rotate-file "^5.0.0"
 
