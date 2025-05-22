@@ -15,23 +15,14 @@ const WebHelper = () => {
 
         /** 프론트엔드에게 JSON결과를 출력하는 기능 */
         res._sendResult = (data, error = null) => {
-            /**
-                {
-                    rt: 결과 (OK, 혹은 에러 이름),
-                    rtcode: HTTP 상태코드 (200,400,404,500)
-                    rtmsg: 결과메시지 (OK 없음. 에러인 경우 에러 내용)
-                    ... JSON 데이터 ...
-                    pubdate: 생성일시
-                }
-             */
             const json = {
-                name: "Success",
+                //name: "Success",
                 status: 200,
                 message: "OK",
             };
 
             if (error) {
-                json.error = error.name || "Server Error";
+                //json.error = error.name || "Server Error";
                 json.status = error.code || 500;
                 json.message = error.message || "요청을 처리하는데 실패했습니다.";
 
@@ -39,7 +30,9 @@ const WebHelper = () => {
                     json.status = 500;
                 }
 
-                json.trace = error.stack;
+                json.item = {
+                    trace: error.stack
+                };
             }
 
             if (data) {
