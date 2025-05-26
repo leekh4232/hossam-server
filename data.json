@@ -4,168 +4,132 @@
     },
     "departments": [
         {
-            "id": 201,
-            "dname": "전자공학과",
-            "loc": "공학관",
-            "phone": "051-125-4567",
-            "email": "ee@myschool.ac.kr",
-            "established": 1985,
-            "homepage": "http://ee.myschool.ac.kr"
+          "id": 101,
+          "dname": "컴퓨터공학과",
+          "loc": "공학관",
+          "phone": "051-123-4567",
+          "email": "cs@myschool.ac.kr",
+          "established": 1990,
+          "homepage": "http://cs.myschool.ac.kr"
         },
         {
-            "id": 202,
-            "dname": "기계공학과",
-            "loc": "공학관",
-            "phone": "051-126-4567",
-            "email": "me@myschool.ac.kr",
-            "established": 1988,
-            "homepage": "http://machine.myschool.ac.kr"
+          "id": 102,
+          "dname": "소프트웨어학과",
+          "loc": "디자인관",
+          "phone": "051-124-4567",
+          "email": "media@myschool.ac.kr",
+          "established": 1995,
+          "homepage": "http://media.myschool.ac.kr"
         },
         {
-            "id": 203,
-            "dname": "건축학과",
-            "loc": "건축관",
-            "phone": "051-127-4567",
-            "email": "arch@myschool.ac.kr",
-            "established": 1992,
-            "homepage": null
+          "id": 201,
+          "dname": "전자공학과",
+          "loc": "공학관",
+          "phone": "051-125-4567",
+          "email": "ee@myschool.ac.kr",
+          "established": 1985,
+          "homepage": "http://ee.myschool.ac.kr"
         },
         {
-            "id": 204,
-            "dname": "산업디자인학과",
-            "loc": "디자인관",
-            "phone": "051-128-4567",
-            "email": "id@myschool.ac.kr",
-            "established": 1996,
-            "homepage": "http://id.myschool.ac.kr"
+          "id": 202,
+          "dname": "기계공학과",
+          "loc": "공학관",
+          "phone": "051-126-4567",
+          "email": "me@myschool.ac.kr",
+          "established": 1988,
+          "homepage": "http://machine.myschool.ac.kr"
         },
         {
-            "id": 301,
-            "dname": "경영학과",
-            "loc": "경영관",
-            "phone": "051-129-4567",
-            "email": "biz@myschool.ac.kr",
-            "established": 1980,
-            "homepage": "http://biz.myschool.ac.kr"
+          "id": 203,
+          "dname": "건축학과",
+          "loc": "건축관",
+          "phone": "051-127-4567",
+          "email": "arch@myschool.ac.kr",
+          "established": 1992,
+          "homepage": null
         },
         {
-            "id": 302,
-            "dname": "경제학과",
-            "loc": "경영관",
-            "phone": "051-130-4567",
-            "email": "econ@myschool.ac.kr",
-            "established": 1982,
-            "homepage": null
+          "id": 204,
+          "dname": "산업디자인학과",
+          "loc": "디자인관",
+          "phone": "051-128-4567",
+          "email": "id@myschool.ac.kr",
+          "established": 1996,
+          "homepage": "http://id.myschool.ac.kr"
         },
         {
-            "id": 401,
-            "dname": "영어영문학과",
-            "loc": "인문사회관",
-            "phone": "051-131-4567",
-            "email": "eng@myschool.ac.kr",
-            "established": 1975,
-            "homepage": null
+          "id": 301,
+          "dname": "경영학과",
+          "loc": "경영관",
+          "phone": "051-129-4567",
+          "email": "biz@myschool.ac.kr",
+          "established": 1980,
+          "homepage": "http://biz.myschool.ac.kr"
         },
         {
-            "id": 402,
-            "dname": "심리학과",
-            "loc": "인문사회관",
-            "phone": "051-132-4567",
-            "email": "psy@myschool.ac.kr",
-            "established": 1987,
-            "homepage": "http://psy.myschool.ac.kr"
+          "id": 302,
+          "dname": "경제학과",
+          "loc": "경영관",
+          "phone": "051-130-4567",
+          "email": "econ@myschool.ac.kr",
+          "established": 1982,
+          "homepage": null
         },
         {
-            "id": 500,
-            "dname": "인공지능학과",
-            "loc": "공학관",
-            "phone": "051-123-4567",
-            "email": "ai@myschool.ac.kr",
-            "established": 2001,
-            "homepage": "http://ai.myschool.ac.kr"
+          "id": 401,
+          "dname": "영어영문학과",
+          "loc": "인문사회관",
+          "phone": "051-131-4567",
+          "email": "eng@myschool.ac.kr",
+          "established": 1975,
+          "homepage": null
         },
         {
-            "id": 501,
-            "dname": "수정된학과",
-            "loc": "새로운위치",
-            "phone": "010-1234-1234",
-            "email": "edit@gmail.com",
-            "established": 2025,
-            "homepage": "https://www.megastudy.com"
+          "id": 402,
+          "dname": "심리학과",
+          "loc": "인문사회관",
+          "phone": "051-132-4567",
+          "email": "psy@myschool.ac.kr",
+          "established": 1987,
+          "homepage": "http://psy.myschool.ac.kr"
         },
         {
-            "id": 502,
-            "dname": "심리학과",
-            "loc": "인문관",
-            "phone": "051-336-7788",
-            "email": "psyc@myschool.ac.kr",
-            "established": 2000,
-            "homepage": "http://psyc.myschool.ac.kr"
+          "id": 500,
+          "dname": "인공지능학과",
+          "loc": "공학관",
+          "phone": "051-123-4567",
+          "email": "ai@myschool.ac.kr",
+          "established": 2001,
+          "homepage": "http://ai.myschool.ac.kr"
         },
         {
-            "id": 503,
-            "dname": "체육학과",
-            "loc": "체육관",
-            "phone": "051-434-3345",
-            "email": "phy@myschool.ac.kr",
-            "established": 2004,
-            "homepage": "http://phy.myschool.ac.kr"
+          "id": 501,
+          "dname": "사회복지학과",
+          "loc": "인문관",
+          "phone": "051-432-2233",
+          "email": "social@myschool.ac.kr",
+          "established": 2002,
+          "homepage": "http://social.myschool.ac.kr"
         },
         {
-            "id": 504,
-            "dname": "aaa",
-            "loc": "bbb",
-            "phone": "ccc",
-            "email": "ddd",
-            "established": 2025,
-            "homepage": null
+          "id": 502,
+          "dname": "심리학과",
+          "loc": "인문관",
+          "phone": "051-336-7788",
+          "email": "psyc@myschool.ac.kr",
+          "established": 2000,
+          "homepage": "http://psyc.myschool.ac.kr"
         },
         {
-            "id": 505,
-            "dname": "신규학과",
-            "loc": "위치",
-            "phone": "010-1234-1234",
-            "email": "hello@gmail.com",
-            "established": 2025,
-            "homepage": null
-        },
-        {
-            "id": 506,
-            "dname": "신규학과",
-            "loc": "위치",
-            "phone": "010-1234-1234",
-            "email": "hello@gmail.com",
-            "established": 2025,
-            "homepage": null
-        },
-        {
-            "id": 507,
-            "dname": "신규학과",
-            "loc": "위치",
-            "phone": "010-1234-1234",
-            "email": "hello@gmail.com",
-            "established": 2025,
-            "homepage": null
-        },
-        {
-            "id": 510,
-            "dname": "새로운학과",
-            "loc": "B-1",
-            "phone": "010-1234-1234",
-            "email": "megastudy@hello.com",
-            "established": 2020,
-            "homepage": "https://megastudy.com"
-        },
-        {
-            "id": 514,
-            "dname": "자바학과(수정)",
-            "loc": "공학관(수정)",
-            "phone": "02-234-5678",
-            "email": "java@myschool.ac.kr",
-            "established": 2025,
-            "homepage": "https://java.myschool.ac.kr"
+          "id": 503,
+          "dname": "체육학과",
+          "loc": "체육관",
+          "phone": "051-434-3345",
+          "email": "phy@myschool.ac.kr",
+          "established": 2004,
+          "homepage": "http://phy.myschool.ac.kr"
         }
-    ],
+      ],
     "professors": [
         {
             "id": 9907,
@@ -1544,7 +1508,7 @@
             "email": "hanyeongceol@live.com",
             "gender": "남",
             "status": "재학",
-            "photo_url": "/photo/students/geonu06.png",
+            "photo_url": "/photo/students/geonu06.jpeg",
             "admission_date": "2025-08-30",
             "graduation_date": null,
             "department_id": 402,
