@@ -36,6 +36,14 @@ const methodOverride = require("method-override");
 const cors = require("cors");
 const expressWinston = require("express-winston");
 const jsonServer = require("./helper/JsonServerHelper");
+const commandLineArgs =require('command-line-args');
+
+const optionDefinitions = [
+  { name: 'cors', alias: 'c', type: Boolean, defaultOption: false },
+  { name: 'port', alias: 'p', type: Number, defaultOption: 8080 }
+]
+
+const options = commandLineArgs(optionDefinitions);
 
 /*-----------------------------------------------------------
  * 3) Express 객체 생성 및 Helper 로드
@@ -63,7 +71,9 @@ const { PageNotFoundException } = require("./helper/ExceptionHelper");
     const form_data = multer();
     app.use(form_data.array());
 
-    app.use(cors());
+    if (options.cors) {
+        app.use(cors());
+    }
 
     app.use(methodOverride("X-HTTP-Method"));
     app.use(methodOverride("X-HTTP-Method-Override"));
@@ -146,6 +156,8 @@ const { PageNotFoundException } = require("./helper/ExceptionHelper");
     /*----------------------------------------------------------
     * 9) 설정한 내용을 기반으로 서버 구동 시작
     *----------------------------------------------------------*/
+    process.env.HTTP_PORT = options.port || process.env.HTTP_PORT;
+    
     app.listen(process.env.HTTP_PORT, function () {
         console.log("+----------------------------------------------+");
         console.log("|             Hossam Backend Server            |");
