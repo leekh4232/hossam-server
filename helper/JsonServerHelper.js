@@ -35,6 +35,8 @@ const getJsonServerRouter = (dbFilePath) => {
             data = data.map((v, i) => {
                 if (v.photo_url) {
                     v.photo_url = combineURLs(appUrl, v.photo_url);
+                } else if (v.image) {
+                    v.image = combineURLs(appUrl, v.image);
                 }
 
                 return v;
